@@ -1,0 +1,42 @@
+#grdGame {
+    width: 621px;
+    height: 828px;
+}
+
+div {
+    width: 621px;
+}
+
+.snitch {
+    background-image: url("../image/snitch.jpg");
+    background-color: yellow;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+.harry-current {
+    background-image: url("../image/harry.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-color: red;
+}
+
+.harry-previous {
+    background-image: url("../image/harry.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-color: lightpink;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.success {
+    background-image: url("../image/success.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-color: greenyellow;
+}
