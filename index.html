@@ -10,6 +10,8 @@
 <body>
 <script type="text/javascript">
     $(document).ready(function () {
+        let $hintActionDesc = $("#hintActionDesc");
+        $hintActionDesc.hide();
         let $hint = $("#hint");
         $hint.hide();
         const $grdGame = $("#grdGame");
@@ -30,7 +32,7 @@
         $grdGame.prop("maxY", $grdGame.find("tr").length - 1);
         $grdGame.prop("maxX", $grdGame.find("tr").first().find("td").length - 1);
 
-        let game = new Game($grdGame);
+        let game = new Game($grdGame, $hintActionDesc);
         $("#showHint").click(function () {
             $hint.toggle();
             game.showPrevious = $(this).prop("checked");
@@ -42,7 +44,7 @@
     <div>
         Настоящий ловец не гоняется за снитчем, а предугадывает его положение. Выбирая ячейку на поле, попробуй поймать снитч.
     </div>
-    <div>
+    <div id="hintActionDesc">
         <label>
             <input type="checkbox" id="showHint"/>
             Показать подсказку

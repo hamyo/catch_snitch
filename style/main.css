@@ -1,6 +1,7 @@
 #grdGame {
     width: 621px;
     height: 828px;
+    margin-top: 10px;
 }
 
 div {
@@ -9,7 +10,7 @@ div {
 
 .snitch {
     background-image: url("../image/snitch.jpg");
-    background-color: yellow;
+    //background-color: yellow;
     background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
@@ -20,7 +21,7 @@ div {
     background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
-    background-color: red;
+    //background-color: red;
 }
 
 .harry-previous {
@@ -28,7 +29,7 @@ div {
     background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
-    background-color: lightpink;
+    //background-color: lightpink;
     filter: blur(4px);
     -webkit-filter: blur(4px);
 }
@@ -38,5 +39,5 @@ div {
     background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
-    background-color: greenyellow;
+    //background-color: greenyellow;
 }

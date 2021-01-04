@@ -46,15 +46,18 @@ class Snitch {
 }
 
 class Game {
-    constructor(gameField) {
+    constructor(gameField, hintActionDesc) {
         this.harry = new Harry(2, 1);
         this.snitch = new Snitch(0, 1);
         this.gameField = $(gameField);
+        this.hintActionDesc = $(hintActionDesc);
+        this.stepsForShowHintActionDesc = 5;
         this.harryClassName = 'harry-current';
         this.previousHarryClassName = 'harry-previous';
         this.snitchClassName = 'snitch';
         this.successClassName = 'success';
         this._showPrevious = false;
+        this.stepCount = 0;
         this.gameClasses = [this.harryClassName, this.previousHarryClassName, this.snitchClassName, this.successClassName]
     }
     set showPrevious(showPrevious) {
@@ -86,9 +89,14 @@ class Game {
         let $cell = this.findCell(this.harry.x, this.harry.y);
         $cell.addClass(this.successClassName);
     }
+    showHintActionDescIfNeed() {
+        if (this.stepCount === this.stepsForShowHintActionDesc) {
+            this.hintActionDesc.show();
+        }
+    }
     draw() {
         this.clearOldGameView();
-
+        this.showHintActionDescIfNeed();
         if (this._showPrevious) {
             this.drawPreviousHarry();
         }
@@ -107,6 +115,7 @@ class Game {
         this.harry.move($(selectedCell).prop("x"), $(selectedCell).prop("y"));
         let snitchY = (this.harry.previousY === 0) ? this.gameField.prop("maxY") : this.harry.previousY - 1;
         this.snitch.move(this.harry.previousX, snitchY);
+        this.stepCount++;
         this.draw();
     }
 
