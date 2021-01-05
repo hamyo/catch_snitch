@@ -1,12 +1,12 @@
 #grdGame {
-    width: 750px;
-    height: 1000px;
+    width: 900px;
+    height: 1200px;
     margin-top: 10px;
 }
 
 div {
-    width: 750px;
-    font-size: 14pt;
+    width: 900px;
+    font-size: 20pt;
 }
 
 #hintActionDesc label {
