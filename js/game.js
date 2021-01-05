@@ -92,6 +92,7 @@ class Game {
     showHintActionDescIfNeed() {
         if (this.stepCount === this.stepsForShowHintActionDesc) {
             this.hintActionDesc.show();
+            alert("Можно воспользоваться подсказкой, если хотите");
         }
     }
     draw() {
@@ -117,6 +118,7 @@ class Game {
         this.snitch.move(this.harry.previousX, snitchY);
         this.stepCount++;
         this.draw();
+
     }
 
 }

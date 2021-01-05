@@ -1,11 +1,16 @@
 #grdGame {
-    width: 621px;
-    height: 828px;
+    width: 750px;
+    height: 1000px;
     margin-top: 10px;
 }
 
 div {
-    width: 621px;
+    width: 750px;
+    font-size: 14pt;
+}
+
+#hintActionDesc label {
+    color: red;
 }
 
 .snitch {
