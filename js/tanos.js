@@ -78,7 +78,7 @@ class Game {
             let lnk = $("#nextLink").find("a");
             const href = "https://www.youtube.com/watch?v=bPUTpLISuIk&ab_channel=NEMAGIA-%D1%81%D1%82%D1%80%D0%B8%D0%BC%D1%8B";
             lnk.prop("href", href);
-            lnk.html(href);
+            lnk.text(href);
             $("#description").hide();
             alert("Супер! Теперь перейдите по открывшейся ссылке");
         }
