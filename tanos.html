@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Танос</title>
+    <link rel="stylesheet" type="text/css" href="style/tanos.css">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/tanos.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        const $gameField = $("#gameField");
+        let game = new Game($gameField);
+        game.draw();
+    });
+</script>
+<div id="description">
+    Нужно открыть по парам одинаковые картинки, как в МЕМО
+</div>
+<div id="nextLink">
+
+</div>
+<div id="gameField">
+</div>
+</body>
+</html>

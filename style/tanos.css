@@ -1,0 +1,17 @@
+#grdGame {
+    width: 900px;
+    height: 1200px;
+    margin-top: 10px;
+    background-color: gray;
+}
+
+#grdGame td{
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+#description, #nextLink {
+    width: 900px;
+    font-size: 40pt;
+}
