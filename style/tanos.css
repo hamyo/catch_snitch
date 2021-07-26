@@ -15,3 +15,7 @@
     width: 900px;
     font-size: 40pt;
 }
+
+#fastLoad{
+    visibility: hidden;
+}
