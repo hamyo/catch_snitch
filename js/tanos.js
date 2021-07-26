@@ -44,19 +44,19 @@ class Game {
     }
     calcGloveUrl(index) {
         if (index === 0 || index === 8) {
-            return "image/tanos1.png";
+            return "image/tanos1.jpg";
         }
         if (index === 1 || index === 5) {
-            return  "image/tanos2.png";
+            return  "image/tanos2.jpg";
         }
         if (index === 2 || index === 7) {
-            return "image/tanos3.png";
+            return "image/tanos3.jpg";
         }
         if (index === 3 || index === 4) {
-            return  "image/tanos4.png";
+            return  "image/tanos4.jpg";
         }
         if (index === 6) {
-            return "image/tanos5.png";
+            return "image/tanos5.jpg";
         }
     }
     setGloves() {
